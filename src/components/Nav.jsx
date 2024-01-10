@@ -1,8 +1,9 @@
 // rrd imports
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 // library
-import { TrashIcon } from "@heroicons/react/outline";
+import { TrashIcon } from "@heroicons/react/24/solid";
 
 // assets
 import logomark from "../assets/logomark.svg";
