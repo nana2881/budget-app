@@ -1,6 +1,5 @@
 // rrd imports
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { Form, NavLink } from "react-router-dom";
 
 // library
 import { TrashIcon } from "@heroicons/react/24/solid";
@@ -16,7 +15,7 @@ const Nav = ({ userName }) => {
         <span>HomeBudget</span>
       </NavLink>
       {userName && (
-        <form
+        <Form
           method="post"
           action="logout"
           onSubmit={(event) => {
@@ -29,10 +28,9 @@ const Nav = ({ userName }) => {
             <span>Delete User</span>
             <TrashIcon width={20} />
           </button>
-        </form>
+        </Form>
       )}
     </nav>
   );
 };
-
 export default Nav;
